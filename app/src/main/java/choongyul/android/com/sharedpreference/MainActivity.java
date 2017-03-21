@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        propertyUtil.getInstance(this);
+        propertyUtil = PropertyUtil.getInstance(this);
         etEmail = (EditText) findViewById(R.id.etEmail);
         aSwitch = (Switch) findViewById(R.id.aSwitch);
         layout2 = (RelativeLayout) findViewById(R.id.layout2);
